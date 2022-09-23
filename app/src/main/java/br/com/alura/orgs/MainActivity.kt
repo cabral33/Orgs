@@ -13,7 +13,15 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Toast.makeText(this, "Bem vindo ao Orgs", Toast.LENGTH_LONG).show()
+        val nome = findViewById<TextView>(R.id.nome)
+        nome.text = ("cesta de fruta")
+
+        val descricao = findViewById<TextView>(R.id.descricao)
+        descricao.text = ("laranja, manga e maçã")
+
+        val valor = findViewById<TextView>(R.id.valor)
+        valor.text = ("99,99")
+
 
     }
 }
